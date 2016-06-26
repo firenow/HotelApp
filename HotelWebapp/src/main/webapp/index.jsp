@@ -9,6 +9,7 @@
 <%
 	HotelModel model = new HotelModel();
 	String[] cityList = model.findAvailableCities();
+	System.out.println("lol");
 
 	String selectedCity = request.getParameter("city");
 	List<Hotel> hotelList = model.findHotelsByCity(selectedCity);
